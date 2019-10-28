@@ -12,7 +12,11 @@ public class Start {
         System.out.println("I starter begge med en Balance på 1000, i skal have 3000 for at vinde.");
         System.out.println("Lad spillet begynde!");
         int Balance = 1000;
-        int roll = Dice.diceHit();
+        int roll =  GameMechanics.diceHit();
+        System.out.println("Du slog " + roll);
+        Balance = Account.newBalance(Balance,roll);
+        System.out.println(Balance);
+
 
 
 
