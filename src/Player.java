@@ -49,4 +49,3 @@ public class Player {
 
         return bal;
     }
-}
