@@ -9,7 +9,7 @@ public class Player {
         String[] names = new String[2];
         System.out.println("Velkommen til spillet indtast jeres navn!");
         for (int i = 0; i < 2; i++) {
-            System.out.println("Spiller " + (i+1) + ", hvad er dit navn?");
+            System.out.println("Spiller " + (i + 1) + ", hvad er dit navn?");
             Scanner scan = new Scanner(System.in);
             names[i] = scan.nextLine();
             System.out.println("Hej " + names[i] + "!");
@@ -26,6 +26,7 @@ public class Player {
         return name;
 
     }
+
     public static int playerTurn(int bal, String player) {
 
         System.out.println("Det er " + player + "'s tur! Tryk Enter for at slå!");
@@ -41,11 +42,11 @@ public class Player {
         System.out.println("Din nye balance er: " + bal);
 
         if (roll == 10) {
-            int playerturn1 = Player.playerTurn(bal,player);
-        }
-        else {
+            playerTurn(bal, player);
+        } else {
             System.out.print("");
         }
 
         return bal;
     }
+}
