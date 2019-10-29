@@ -1,5 +1,8 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
+import java.util.Scanner;
+import java.util.Scanner;
+import java.util.Scanner;
 
 public class Player {
     public static String[] startGame() {
@@ -23,5 +26,27 @@ public class Player {
         return name;
 
     }
+    public static int playerTurn(int bal, String player) {
 
+        System.out.println("Det er " + player + "'s tur! Tryk Enter for at slå!");
+        //scanner der venter for intput imellem her:
+        Scanner scan = new Scanner(System.in);
+        String enter = scan.nextLine();
+
+        int roll = GameMechanics.diceHit();
+        System.out.println("Du slog " + roll);
+        System.out.println(GameMechanics.storyText(roll));
+
+        bal = Account.newBalance(bal, roll);
+        System.out.println("Din nye balance er: " + bal);
+
+        if (roll == 10) {
+            int playerturn1 = Player.playerTurn(bal,player);
+        }
+        else {
+            System.out.print("");
+        }
+
+        return bal;
+    }
 }
