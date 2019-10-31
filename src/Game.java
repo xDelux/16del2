@@ -34,5 +34,17 @@ public class Game {
                 System.out.print("");
             }
         }
+
     }
-}
+    public static boolean restartGame(String string) {
+        System.out.println("Vil i starte et nyt spil?");
+        boolean bool;
+        if (string.equals("y")) {
+            return bool = true;
+        } else {
+            System.out.println("Tak for spillet!");
+            return bool = false;
+        }
+    }
+    }
+
