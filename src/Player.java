@@ -1,10 +1,8 @@
-import java.sql.SQLOutput;
-import java.util.Scanner;
-import java.util.Scanner;
-import java.util.Scanner;
+
 import java.util.Scanner;
 
 public class Player {
+
     public static String[] startGame() {
         String[] names = new String[2];
         System.out.println("Velkommen til spillet indtast jeres navn!");
@@ -16,19 +14,11 @@ public class Player {
         }
         System.out.println("Lad spillet begynde! " + names[0] + " VS " + names[1] + ".");
         System.out.println("Begge spillere starter med en balance på 1000 mønter!");
+        System.out.println("");
         return names;
     }
 
-    public static String setName() {
-        String name = "";
-        Scanner scan = new Scanner(System.in);
-        name = scan.nextLine();
-        return name;
-
-    }
-
     public static int playerTurn(int bal, String player) {
-
         System.out.println("Det er " + player + "'s tur! Tryk Enter for at slå!");
         //scanner der venter for intput imellem her:
         Scanner scan = new Scanner(System.in);
@@ -46,7 +36,7 @@ public class Player {
         } else {
             System.out.print("");
         }
-
+        System.out.println("");
         return bal;
+        }
     }
-}
