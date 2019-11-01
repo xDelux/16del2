@@ -1,3 +1,5 @@
+package Spil;
+
 public class Account {
 
     public static int newBalance (int bal, int roll) {

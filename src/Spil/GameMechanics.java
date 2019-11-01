@@ -1,3 +1,5 @@
+package Spil;
+
 import java.util.Random;
 
 public class GameMechanics {

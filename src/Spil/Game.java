@@ -1,3 +1,5 @@
+package Spil;
+
 public class Game {
 
     public static boolean winCondition(int bal, String player) {

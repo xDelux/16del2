@@ -1,3 +1,4 @@
+package Spil;
 
 import java.util.Scanner;
 
@@ -18,7 +19,6 @@ public class Player {
         System.out.println("------------------------------------------------");
         return names;
     }
-
     public static int playerTurn(int bal, String player) {
         System.out.println("Det er " + player + "'s tur! Tryk Enter for at slå!");
         //scanner der venter for intput imellem her:
