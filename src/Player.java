@@ -11,10 +11,11 @@ public class Player {
             Scanner scan = new Scanner(System.in);
             names[i] = scan.nextLine();
             System.out.println("Hej " + names[i] + "!");
+            System.out.println("------------------------------------------------");
         }
         System.out.println("Lad spillet begynde! " + names[0] + " VS " + names[1] + ".");
-        System.out.println("Begge spillere starter med en balance på 1000 mønter!");
-        System.out.println("");
+        System.out.println("Begge spillere starter med en balance på 1000 mønter! Først til 3000 vinder!");
+        System.out.println("------------------------------------------------");
         return names;
     }
 
@@ -30,13 +31,13 @@ public class Player {
 
         bal = Account.newBalance(bal, roll);
         System.out.println("Din nye balance er: " + bal);
-
+        System.out.println("------------------------------------------------");
         if (roll == 10) {
             playerTurn(bal, player);
         } else {
             System.out.print("");
         }
-        System.out.println("");
+
         return bal;
         }
     }
